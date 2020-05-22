@@ -56,7 +56,7 @@ article {
   body {
     grid-template-areas:
       "header header header header header"
-      "topics topics article article .";
+      "topics . article article article ";
     grid-template-columns: 15% 15% 1fr 1fr 1fr;
   }
 
@@ -73,13 +73,10 @@ article {
     }
   }
 
-  article {
-    border-left: 1px solid #bebebe;
-  }
-
   #topics {
     padding: 20px;
     display: block;
-    justify-self: center;
+    word-break: break-word;
+    border-right: 1px solid #bebebe;
   }
 }

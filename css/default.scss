@@ -37,6 +37,10 @@ header {
     & > a {
       font-weight: 100;
       color: black;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }

@@ -18,7 +18,7 @@
     <aside id="sidebar">
       <section id="topics">
         {% for item in site.docs %}
-        <a href="{{item.url}}">{{ item.title }}</a>
+        <a href="{{item.url}}" class="noselect">{{ item.title }}</a>
         {% endfor %}
       </section>
       <section id="ref">

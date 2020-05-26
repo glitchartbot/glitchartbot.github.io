@@ -50,7 +50,7 @@ article {
   padding: 15px 25px;
 }
 
-#sidebar {
+aside {
   grid-area: sidebar;
   display: none;
   background-color: #f9f9f9;
@@ -117,7 +117,7 @@ article {
     flex-direction: column;
   }
 
-  #sidebar {
+  aside {
     padding: 20px;
     word-break: break-word;
     border-right: 1px solid #bebebe;

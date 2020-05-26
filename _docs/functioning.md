@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Funcionamento
+order: 2
 ---
 
 ## Como funciona
@@ -9,4 +10,4 @@ Cada bot no Twitter precisa de algumas credenciais específicas pra funcionar, o
 
 ## Tecnologias usadas
 
-O bot inicialmente foi escrito em JavaScript mas por problemas de escalabilidade ele foi reescrito em <span class="highlight-text">TypeScript</span>, no <span class="highlight-text">Node 10</span>. Ele atualmente roda numa máquina da <span class="highlight-text">Amazon EC2</span>. O bot edita as imagens usando um de diversos "scripts" para o sofware de código criativo, <span class="highlight-text">Processing (3.5.4)</span> 
+O bot inicialmente foi escrito em JavaScript mas por problemas de escalabilidade ele foi reescrito em <span class="highlight-text">TypeScript</span>, no <span class="highlight-text">Node 10</span>. Ele atualmente roda numa máquina da <span class="highlight-text">Amazon EC2</span>. O bot edita as imagens usando um de diversos "scripts" para o sofware de código criativo, <span class="highlight-text">Processing (3.5.4)</span>

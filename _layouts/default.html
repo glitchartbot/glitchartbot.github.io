@@ -17,8 +17,9 @@
     </header>
     <aside id="sidebar">
       <section id="topics">
-        {% for item in site.docs %}
-        <a href="{{item.url}}" class="noselect">{{ item.title }}</a>
+        {% assign sortedTopics = site.docs | sort: 'order' %} {% for topic in
+        sortedTopics %}
+        <a href="{{topic.url}}" class="noselect">{{ topic.title }}</a>
         {% endfor %}
       </section>
       <section id="ref">

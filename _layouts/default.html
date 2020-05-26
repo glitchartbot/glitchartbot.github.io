@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{{site.baseurl}}/assets/main.css" />
     <link rel="stylesheet" href="{{site.baseurl}}/css/default.css" />
+    <link rel="stylesheet" href="{{site.baseurl}}/css/post.css" />
     <title>{{ site.title }}</title>
   </head>
   <body>
@@ -12,13 +13,22 @@
       <span id="icon-hamburger">
         {% include icons.html icon="hamburger" %}
       </span>
-      <h2>Glitch Art Bot</h2>
+      <h2 id="title" class="noselect"><a href="/">Glitch Art Bot</a></h2>
     </header>
-    <section id="topics">
-      {% for item in site.docs %}
-      <a href={{item.url}}>{{ item.title }}</a>
-      {% endfor %}
-    </section>
+    <aside id="sidebar">
+      <section id="topics">
+        {% for item in site.docs %}
+        <a href="{{item.url}}">{{ item.title }}</a>
+        {% endfor %}
+      </section>
+      <section id="ref">
+        <span id="icon-github" class="icon">
+          <a href="https://github.com/glitchartbot" target="_blank">
+            {% include icons.html icon="github" %}
+          </a>
+        </span>
+      </section>
+    </aside>
     <article>
       <h1>{{page.nome}}</h1>
       {{ content }}

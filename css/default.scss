@@ -92,6 +92,10 @@ aside {
   }
 }
 
+.highlighter-rouge {
+  max-width: calc(100vw - 50px);
+}
+
 @media (min-width: 1025px) {
   body {
     grid-template-areas:

@@ -1,5 +1,22 @@
 ---
 layout: default
 ---
+{{ content }}
 
-{{ content }} 
+{% assign lastTopic = site.docs | sort: 'order' | last %}
+
+{% if lastTopic.order != page.order %} 
+  {% assign topicsSorted = site.docs | sort: 'order' %}
+  {% for topic in topicsSorted %}
+    {% assign next = forloop.index0 %}
+    {% if topic.order == page.order %}
+      <hr id="topic-end">
+      <a href={{site.docs[next].url}} id="next-topic">
+        Próximo tópico: &nbsp;
+        <span id="topic-name">{{ site.docs[next].title }}</span>
+        &nbsp;&nbsp;
+        <span id="arrow">➔</span>
+      </a>
+    {% endif %}
+  {% endfor %}
+{% endif %}

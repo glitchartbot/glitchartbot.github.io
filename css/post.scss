@@ -4,3 +4,35 @@
 .highlight-text {
   font-weight: bold;
 }
+
+#next-topic {
+  background-color: #f9f9f9;
+  color: black;
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+  margin-top: 25px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  * {
+    font-weight: bold;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+#topic-end {
+  margin-top: 25px;
+  border: 1px solid #bebebe;
+}
+
+@media (min-width: 1025px) {
+  #next-topic {
+    float: right;
+    width: 50%;
+  }
+}

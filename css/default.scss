@@ -120,10 +120,10 @@ aside {
   #topics {
     display: flex;
     flex-direction: column;
+    padding: 20px;
   }
 
   aside {
-    padding: 20px;
     word-break: break-word;
     border-right: 1px solid #bebebe;
     display: grid;
@@ -135,7 +135,6 @@ aside {
       justify-content: space-evenly;
       align-items: center;
       border-top: 1px solid #cecece;
-      border-radius: 4px;
       grid-row: 2;
 
       .icon {

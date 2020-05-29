@@ -22,8 +22,10 @@ O bot tem diversos scripts que editam as fotos de diversos modos diferentes. Par
 @GlitchArtBot [nome do script] [nome da opção]=[valor da opção]
 ```
 
-Supondo que eu quisesse editar a quarta imagem de um tweet com o modo branco do Pixel Sort (todos os scripts e todas as suas opções estão na seção TODO Scripts), eu mencionaria o bot com as seguintes opções:
+Supondo que eu quisesse editar a quarta imagem de um tweet com o modo branco do Pixel Sort, eu mencionaria o bot com as seguintes opções:
 
 ```
 @GlitchArtBot pixelsort mode=3 photo=4
 ```
+
+Todos os scripts e todas as suas opções estão na seção <span class="highlight-text">Scripts</span>.

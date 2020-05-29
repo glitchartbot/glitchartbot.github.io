@@ -1,5 +1,5 @@
 ---
 layout: default
+redirect_to:
+  - /docs/introduction
 ---
-
-Eu não tenho ideia do que escrever nessa página inicial, por agora vou deixar vazio mesmo.

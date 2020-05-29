@@ -8,12 +8,12 @@ layout: default
 {% if lastTopic.order != page.order %} 
   {% assign topicsSorted = site.docs | sort: 'order' %}
   {% for topic in topicsSorted %}
-    {% assign next = forloop.index0 %}
+    {% assign next = forloop.index0 | plus: 1 %}
     {% if topic.order == page.order %}
       <hr id="topic-end">
-      <a href={{site.docs[next].url}} id="next-topic">
+      <a href={{topicsSorted[next].url}} id="next-topic">
         Próximo tópico: &nbsp;
-        <span id="topic-name">{{ site.docs[next].title }}</span>
+        <span id="topic-name">{{ topicsSorted[next].title }}</span>
         &nbsp;&nbsp;
         <span id="arrow">➔</span>
       </a>

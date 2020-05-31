@@ -8,6 +8,15 @@ order: 4
 
 O bot usa um software de código criativo, o Processing, nele é possível manipular imagens e afins, tudo dependendo do código providenciado.
 
+## Opções globais
+
+Essas opções são compatíveis com todos os scripts
+
+
+| Opção   | Padrão | Descrição                                                             |
+| ------- | ------ | --------------------------------------------------------------------- |
+| `photo` | `1`    | Especifica qual imagem editar se o tweet tiver mais de uma imagem válida. |
+
 ## Scripts disponíveis
 
 Esses scripts podem ser utilizados para personalizar o resultado final da sua imagem editada. Cada opção só é compatível com seu próprio script. Se você usar uma opção não compatível com um script, o bot não vai dar erro ou algo do tipo, ele só vai ignorar a opção.

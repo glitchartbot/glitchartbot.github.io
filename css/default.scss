@@ -113,6 +113,100 @@ aside {
   }
 }
 
+.menu-toggle {
+  display: inline-block;
+  padding: .75em 15px;
+  line-height: 1em;
+  font-size: 1em;
+  color: #333;
+
+  &:hover, &:focus {
+    color: #c00;
+  }
+}
+
+#mobile-topics {
+  position: absolute;
+  display: none;
+  left: -200px;
+  top: 0;
+  height: 100%;
+  overflow-x: visible;
+  overflow-y: hidden;
+  transition: left 0.3s ease,
+  box-shadow 0.3s ease;
+  z-index: 999;
+
+  &:target {
+    display: block;
+    left: 0;
+    outline: none;
+    -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+    -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+    box-shadow: 3px 0 12px rgba(0,0,0,.25);
+
+    pre.highlight {
+      overflow-x: hidden;
+    }
+
+    ul {
+      position: relative;
+      z-index: 1000;
+    }
+
+    + .backdrop {
+      position: absolute;
+      display: block;  
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 998;
+      background: rgba(0,0,0,.85);
+      cursor: default;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 2.5em 0 0;
+    -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+   -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+    box-shadow: -8px 0 8px rgba(0,0,0,.5);
+    min-height: 100%;
+    width: 200px;
+    background: #f9f9f9;
+  }
+
+  a {
+    display: block;
+    padding: .75em 15px;
+    line-height: 1em;
+    font-size: 1em;
+    color: black;
+    text-decoration: none;
+    font-family: 'Fira Sans Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+}
+
+#mobile-topics #mobile-topics-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#mobile-topics:target #mobile-topics-close {
+  z-index: 1001;
+}
+
+@supports (position: fixed) {
+  #mobile-topics,
+  #mobile-topics:target + .backdrop {
+    position: fixed;
+  }
+}
+
 @media (min-width: 768px) {
   body {
     grid-template-rows: 0.1fr auto;

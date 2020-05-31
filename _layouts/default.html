@@ -12,10 +12,24 @@
   </head>
   <body>
     <header>
-      <span id="icon-hamburger">
+      <a id="icon-hamburger" href="#mobile-topics" class="menu-toggle">
         {% include icons.html icon="hamburger" %}
-      </span>
-      <h2 id="title" class="noselect"><a href="/">Glitch Art Bot</a></h2>
+      </a>
+      <nav id="mobile-topics">
+        <a href="#icon-hamburger" id="mobile-topics-close" class="menu-close">
+          X
+        </a>
+        <ul>
+        {% assign sortedTopics = site.docs | sort: 'order' %} {% for topic in
+          sortedTopics %}
+          <li>
+            <a href="{{topic.url}}" class="noselect">{{ topic.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <a href="#icon-hamburger" class="backdrop" tabindex="-1" hidden></a>
+      <h2 id="title" class="noselect"><a href="/docs/introduction">Glitch Art Bot</a></h2>
     </header>
     <aside>
       <section id="topics">

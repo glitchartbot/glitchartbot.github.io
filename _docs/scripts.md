@@ -6,7 +6,7 @@ order: 4
 
 ## Como funciona
 
-O bot usa um software de código criativo, o Processing, nele é manipular imagens e afins, tudo dependendo do código providenciado.
+O bot usa um software de código criativo, o Processing, nele é possível manipular imagens e afins, tudo dependendo do código providenciado.
 
 ## Scripts disponíveis
 
@@ -24,7 +24,7 @@ Esses scripts podem ser utilizados para personalizar o resultado final da sua im
 
 | Opção  | Valores permitidos                       | Padrão | Descrição                                           |
 | ------ | ---------------------------------------- | ------ | --------------------------------------------------- |
-| `mode` | `1`: Preto<br>`2`: Brilho<br>`3`: Branco | `2`    | O modo que o script vai usar para fazer a ordenação |
+| `mode` | `1`: Preto<br>`2`: Brilho<br>`3`: Branco | `2`    | A referência a ser usada para fazer a ordenação (se usado no modo branco, os pixels mais próximos da cor branca serão usados na ordenação, etc...) |
 
 > Script original por [Kim Asendorf](https://github.com/kimasendorf).
 

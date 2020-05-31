@@ -24,7 +24,7 @@ body {
   grid-template-areas:
     "header header header header"
     ". article article .";
-  grid-template-rows: 0.5fr auto;
+  grid-template-rows: 0.1fr auto;
 }
 
 header {

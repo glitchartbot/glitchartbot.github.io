@@ -28,4 +28,6 @@ Supondo que eu quisesse editar a quarta imagem de um tweet com o modo branco do 
 @GlitchArtBot pixelsort mode=3 photo=4
 ```
 
-Todos os scripts e todas as suas opções estão na seção <span class="highlight-text">Scripts</span>.
+`photo` é uma opção global, que são melhor explicadas na seção <span class="highlight-text">Scripts</span>, assim como todos os scripts e suas opções.
+
+Os dois perfis, o que marcou o bot e o que contém a imagem **DEVEM** ser perfis abertos, caso contrário se assume que o bot não tem permissão para ver os tweets.

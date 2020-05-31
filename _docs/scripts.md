@@ -13,7 +13,7 @@ O bot usa um software de código criativo, o Processing, nele é possível manip
 Essas opções são compatíveis com todos os scripts
 
 
-| Opção   | Padrão | Descrição                                                             |
+| Nome   | Padrão | Descrição                                                             |
 | ------- | ------ | --------------------------------------------------------------------- |
 | `photo` | `1`    | Especifica qual imagem editar se o tweet tiver mais de uma imagem válida. |
 
@@ -31,7 +31,7 @@ Esses scripts podem ser utilizados para personalizar o resultado final da sua im
 
 #### Opções
 
-| Opção  | Valores permitidos                       | Padrão | Descrição                                           |
+| Nome  | Valores permitidos                       | Padrão | Descrição                                           |
 | ------ | ---------------------------------------- | ------ | --------------------------------------------------- |
 | `mode` | `1`: Preto<br>`2`: Brilho<br>`3`: Branco | `2`    | A referência a ser usada para fazer a ordenação (se usado no modo branco, os pixels mais próximos da cor branca serão usados na ordenação, etc...) |
 
@@ -47,7 +47,7 @@ Esses scripts podem ser utilizados para personalizar o resultado final da sua im
 
 #### Opções
 
-| Opção     | Valores permitidos                       | Padrão | Descrição                                                                                                             |
+| Nome     | Valores permitidos                       | Padrão | Descrição                                                                                                             |
 | --------- | ---------------------------------------- | ------ | --------------------------------------------------------------------------------------------------------------------- |
 | `channel` | `1`: Vermelho<br>`2`: Verde<br>`3`: Azul | `1`    | O canal da imagem que vai ser usado pra fazer drift (recomendado usar o canal com cores mais predominantes na imagem) |
 | `amount`  | `0 ... 100`                              | `50`   | O limite de cor pra fazer o drift (quanto menor o número, mais efeito)                                                |

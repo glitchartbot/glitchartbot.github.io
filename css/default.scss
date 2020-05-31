@@ -49,7 +49,7 @@ header {
 
   #title {
     grid-area: name;
-    padding: 10px;
+    padding-top: 5px;
     margin-bottom: 0px;
     justify-self: center;
     & > a {
@@ -114,11 +114,9 @@ aside {
 }
 
 .menu-toggle {
-  display: inline-block;
-  padding: .75em 15px;
   line-height: 1em;
   font-size: 1em;
-  color: #333;
+  padding-top: 3px;
 
   &:hover, &:focus {
     color: #c00;
@@ -144,10 +142,6 @@ aside {
     -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
     -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
     box-shadow: 3px 0 12px rgba(0,0,0,.25);
-
-    pre.highlight {
-      overflow-x: hidden;
-    }
 
     ul {
       position: relative;

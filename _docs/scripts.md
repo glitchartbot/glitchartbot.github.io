@@ -42,4 +42,4 @@ Esses scripts podem ser utilizados para personalizar o resultado final da sua im
 | --------- | ---------------------------------------- | ------ | --------------------------------------------------------------------------------------------------------------------- |
 | `channel` | `1`: Vermelho<br>`2`: Verde<br>`3`: Azul | `1`    | O canal da imagem que vai ser usado pra fazer drift (recomendado usar o canal com cores mais predominantes na imagem) |
 | `amount`  | `0 ... 100`                              | `50`   | O limite de cor pra fazer o drift (quanto menor o número, mais efeito)                                                |
-| `dir`     | `1`: Vertical <br> `2`: Horizontal       | `1`    | A direção que o efeito será aplicado                                                                                  |
+| `dir`     | `1`: Horizontal <br> `2`: Vertical       | `1`    | A direção que o efeito será aplicado                                                                                  |

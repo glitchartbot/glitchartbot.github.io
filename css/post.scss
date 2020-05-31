@@ -4,16 +4,19 @@
 @font-face {
   font-family: 'Fira Sans Semi Bold Italic';
   src: url('/assets/fonts/FiraSans-SemiBoldItalic.ttf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Montserrat';
   src: url('/assets/fonts/Montserrat-Regular.ttf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Roboto Mono';
   src: url('/assets/fonts/RobotoMono.ttf');
+  font-display: swap;
 }
 
 .highlight-text {

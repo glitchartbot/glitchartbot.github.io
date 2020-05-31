@@ -4,11 +4,13 @@
 @font-face {
   font-family: 'Fira Sans Light';
   src: url('/assets/fonts/FiraSans-Light.ttf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Fira Sans Light Italic';
   src: url('/assets/fonts/FiraSans-LightItalic.ttf');
+  font-display: swap;
 }
 
 @media (max-width: 360px) {

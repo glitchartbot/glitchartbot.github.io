@@ -94,6 +94,10 @@ aside {
                                 supported by Chrome, Edge, Opera and Firefox */
 }
 
+.highlighter-rouge { // Code blocks 
+  max-width: calc(100vw - 50px);
+}
+
 #topics a {
   color: black;
   font-weight: 600;
